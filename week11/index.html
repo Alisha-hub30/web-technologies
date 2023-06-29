@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        let a = 10;
+        {
+            let a=12;
+            console.log(a);
+        }
+        console.log(a);
+
+        const items = {
+            name : "Alisha",
+            Age : 20,
+            Address : "Duwakot"
+        }
+        console.log(items.name);
+
+        const dictionary = {
+            money : "cash",
+            laptop : "Dell",
+            kitkat : "Chocolate"
+        }
+        console.log(dictionary);
+        const b = prompt ("What is your name:");
+        console.log(b);
+
+        age1 = prompt ("What is your age:");
+        if (age1>0){
+            alert("Valid age")
+        }else{
+            alert("Invalid age")
+        }
+
+        age2 = prompt ("What is your age:");
+        if (age2>0 && age2<=12){
+            alert("infant")
+        }else if (age2>13 && age2<=19){
+            alert("teenager")
+        }else if (age2>20 && age2<=50){
+            alert("adult")
+        }else if (age2>=51){
+            alert("old")
+        }else{
+            alert("Invalid age")
+        }
+
+        for (i=0;i<=100;i++){
+            console.log(i);
+        }
+
+        let total=0;
+        for (let i = 0; i <= 100; i++){
+            total = total + i
+        }
+        alert(total)
+
+       let total1 = 0;
+        function sum(a,b){
+            total1 = a+ b;
+            return total1;
+        }
+        console.log(sum(2,3))
+
+        function area(r){
+            pi=Math.PI;
+            c = pi* r*r;
+            return c;
+        }
+        let radius = prompt ("Enter the radius:");
+        console.log(area(radius));
+
+
+    </script>
+</body>
+</html>
